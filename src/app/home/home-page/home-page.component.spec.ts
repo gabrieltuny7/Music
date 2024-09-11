@@ -4,6 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { HomePageComponent } from './home-page.component';
 
 describe('HomePageComponent', () => {
+  
   let component: HomePageComponent;
   let fixture: ComponentFixture<HomePageComponent>;
 
@@ -22,3 +23,5 @@ describe('HomePageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+

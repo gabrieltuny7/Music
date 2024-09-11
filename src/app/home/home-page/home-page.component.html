@@ -1,8 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Listen now</ion-title>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <div class="example-content">Listen now content</div>
 </ion-content>
+
+<ion-content>
+  <ion-list>
+      <ion-item *ngFor="let musica of musicas">
+          <ion-label>
+              <h2>{{ musica.title }}</h2>
+              <p>{{ musica.artist }} - {{ musica.album }}</p>
+          </ion-label>
+      </ion-item>
+  </ion-list>
+</ion-content>
+  
